@@ -21,6 +21,7 @@ getUserNumber();
 
 function playTheGame(userSize) {
     function createDefaultGrids() {
+        showGridsSize.textContent = `${grisSizeDefault} x ${grisSizeDefault}`;
         for(let i = 0; i < grisSizeDefault; i ++) {
         const containerRows = document.createElement("div");
         containerRows.classList = "container-rows";
