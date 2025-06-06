@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, black, green, black);
+    justify-content: center;
+    align-items: center;
+}
+body,
+.container-main{
+    display: flex;
+}
+.container-main{
+    width: 1024px;
+    padding: 20px 0;
+    border-radius: 20px;
+    background-color: aqua;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container-etch-a-sketch{
+   width: 750px;
+   height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: #fff;
+}
+.container-etch-a-sketch .container-rows{
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex: 1 1 0%;
+}
+.container-etch-a-sketch .container-rows .box{
+    width: auto;
+    height: auto;
+    border: 1px solid #000;
+    flex: 1 1 0%;
+}
+#pointer{
+    display: none;
+}
+.choose-tool{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.container-tools img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.container-tools button{
+    border: none;
+    width: 54px;
+    height: 54px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+.reset-grids,
+.change-grid,
+.reset-colors{
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5em;
+}
